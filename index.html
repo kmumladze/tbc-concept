@@ -44,9 +44,9 @@
 
         <div class="header-menu">
           <ul>
-            <li>პროდუქტები</li>
-            <li>შეთავაზებები</li>
-            <li>კონცეპტის სივრცე</li>
+            <li id="dropdownBtn1" onclick="toggleDropDown()">პროდუქტები</li>
+            <li id="dropdownBtn2">შეთავაზებები</li>
+            <li id="dropdownBtn3">კონცეპტის სივრცე</li>
           </ul>
         </div>
 
@@ -106,6 +106,58 @@
         </div>
       </nav>
     </header>
+
+    <div class="dropdown-container">
+      <div class="card-dropdown-menu">
+        <div class="left-side">
+          <div class="img-area">
+            <img src="./images/cards.png" alt="cards" />
+          </div>
+
+          <div class="arrow">
+            <div class="digital-arrow-icon">
+              <svg
+                data-v-562b0aec=""
+                width="20"
+                height="21"
+                viewbox="0 0 20 21"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  data-v-562b0aec=""
+                  d="M15.8342 4.04761H7.50091C7.04258 4.04761 6.66758 4.42261 6.66758 4.88094C6.66758 5.33927 7.04258 5.71427 7.50091 5.71427H13.8259L3.57578 15.9643C3.25078 16.2893 3.25078 16.8143 3.57578 17.1393C3.74245 17.3059 3.95078 17.3809 4.16744 17.3809C4.38411 17.3809 4.59244 17.2976 4.75911 17.1393L15.0009 6.88927V13.2143C15.0009 13.6726 15.3759 14.0476 15.8342 14.0476C16.2925 14.0476 16.6675 13.6726 16.6675 13.2143V4.88094C16.6675 4.42261 16.2925 4.04761 15.8342 4.04761Z"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="digital-bank">ციფრული ბანკი</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="first-dropdown-menu">
+          <a href="#" class="first">პროდუქტების მიმოხილვა</a>
+          <a href="#">ნაკრები</a>
+          <a href="#">პირადი ბანკირი</a>
+        </div>
+
+        <div class="second-dropdown-menu">
+          <a href="#">მიმოხილვა</a>
+          <a href="#">შეთავაზებები</a>
+          <a href="#">ღონისძიებები</a>
+        </div>
+      </div>
+
+      <div class="fourth-dropdown-menu">
+        <a href="#">მიმოხილვა</a>
+        <a href="#">კაფე</a>
+        <a href="#">ბიბლიოთეკა</a>
+        <a href="#" class="concept-button">კონცეპტ ფილიალები</a>
+      </div>
+    </div>
+
     <script src="./app.js"></script>
   </body>
 </html>
