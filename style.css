@@ -47,7 +47,7 @@ nav {
   justify-content: center !important;
   /* margin-right: auto; */
   position: relative;
-  gap: 80px;
+  gap: 40px;
 }
 .tbc-logo {
   display: flex;
@@ -60,6 +60,7 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 30px;
+  font-size: 14px;
 }
 ul li {
   cursor: pointer;
@@ -211,7 +212,7 @@ a {
   position: relative;
   right: 50px;
 }
-.fourth-dropdown-menu {
+.third-dropdown-menu {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -232,7 +233,7 @@ a {
 .card-dropdown-menu,
 .first-dropdown-menu,
 .second-dropdown-menu,
-.fourth-dropdown-menu {
+.third-dropdown-menu {
   display: none;
 }
 .card-dropdown-menu.show {
@@ -240,6 +241,20 @@ a {
   transition: all 0.3s ease-in-out;
 }
 .first-dropdown-menu.show {
-  display: block;
+  display: flex;
   transition: all 0.3s ease-in-out;
+}
+
+.second-dropdown-menu.show {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 130px;
+}
+.third-dropdown-menu.show {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 100%;
+  left: 350px;
 }
