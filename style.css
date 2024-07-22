@@ -339,11 +339,31 @@ footer {
 }
 .footer-dropdown-link {
   font-family: tbc-regular;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footer-dropdown-link:hover {
+  color: #182cc0;
+  transition: 0.5s;
 }
 .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.tell,
+.mail,
+.branches {
+  cursor: pointer;
+}
+.tell:hover {
+  text-decoration: underline;
+}
+.mail:hover {
+  text-decoration: underline;
+}
+.branches:hover {
+  text-decoration: underline;
 }
 .social-icons {
   display: flex;
@@ -368,4 +388,42 @@ footer {
 .ig-icon:hover {
   color: #182cc0;
   background-color: #eee;
+}
+
+.footer-bottom {
+  background-color: #fff;
+  border-top: 1px solid #eef1f1;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 12px;
+}
+.footer-bottom-inner {
+  padding-left: 47px;
+  padding-right: 47px;
+  width: 100%;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-bottom-left {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.footer-tbc-logo {
+  display: flex;
+  gap: 8px;
+}
+.footer-bottom-right {
+  display: flex;
+  gap: 10px;
+  font-family: tbc-regular;
+}
+.bottom-text {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.bottom-text:hover {
+  color: #182cc0;
+  transition: 0.7s;
 }
