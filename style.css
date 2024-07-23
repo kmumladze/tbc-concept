@@ -338,7 +338,7 @@ main {
   color: #fff;
 }
 .sub-button:hover {
-  background-color: #007aff;
+  background-image: linear-gradient(15deg, #001682, #3240e5);
   transition: 0.3s ease-in;
 }
 
@@ -544,7 +544,7 @@ main {
   height: 50vh;
 }
 /* end slider section */
-
+/* start mobile bank */
 .digital-container {
   background-color: #fff;
   width: 100%;
@@ -595,6 +595,60 @@ main {
   background-color: #f9fafa;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+}
+/* end mobile bank */
+.slider2 {
+  height: 50vh;
+}
+/* start personal banker */
+.banner2 {
+  position: relative;
+  margin-top: 50px;
+}
+.bg-img img {
+  min-height: 360px;
+  border-radius: 8px;
+  position: inherit;
+  object-fit: cover;
+  width: 100%;
+  height: 360px;
+  filter: brightness(60%);
+}
+.bg-img {
+  width: 100%;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.banner-text p {
+  font-family: tbc-regular;
+  font-size: 15px;
+}
+.btn-area {
+  background-color: #182cc0;
+  width: 180px;
+  padding: 13px 8px;
+  display: flex;
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: black;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in;
+}
+.btn-area:hover {
+  background-image: linear-gradient(15deg, #001682, #3240e5);
+  transition: 0.3s ease-in;
 }
 /* start footer */
 footer {
