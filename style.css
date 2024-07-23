@@ -494,11 +494,35 @@ main {
   color: #fff;
   text-decoration: underline;
 }
+.readmore a:hover {
+  text-decoration: none;
+  color: #b8bec0;
+  cursor: pointer;
+  transition: 0.6s ease-out;
+}
+.readmore:hover {
+  text-decoration: none;
+  color: #b8bec0;
+  cursor: pointer;
+  transition: 0.6s ease-out;
+}
 .last-readmore {
   position: absolute;
   bottom: 55px;
   left: 50px;
   color: #fff;
+}
+.last-readmore:hover {
+  text-decoration: none;
+  color: #b8bec0;
+  cursor: pointer;
+  transition: 0.6s ease-out;
+}
+.last-readmore a:hover {
+  text-decoration: none;
+  color: #b8bec0;
+  cursor: pointer;
+  transition: 0.6s ease-out;
 }
 .last-readmore a {
   color: #fff;
