@@ -576,6 +576,26 @@ main {
   font-size: 16px;
   width: 90%;
 }
+.android-ios {
+  display: flex;
+  gap: 20px;
+}
+.android,
+.ios {
+  border: 1px solid #e1e4e5;
+  padding: 14px 32px;
+  border-radius: 5px;
+}
+.android:hover {
+  background-color: #f9fafa;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.ios:hover {
+  background-color: #f9fafa;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
 /* start footer */
 footer {
   padding-top: 60px;
