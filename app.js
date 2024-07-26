@@ -56,3 +56,17 @@ function toggleDropDown3() {
 function removeclass() {
   dropdownContainer.classList.remove("card-dropdown-menu");
 }
+
+// accordion
+const items = document.querySelectorAll(".accordion .accordion-item");
+const burgerBar = document.querySelector(".burger-bar");
+
+burgerBar.addEventListener("click", function () {
+  items.forEach((item) => {
+    const trigger = item.querySelector(".accordion-header");
+
+    trigger.addEventListener("click", () => {
+      trigger.nextElementSibling.classList.toggle("active");
+    });
+  });
+});
