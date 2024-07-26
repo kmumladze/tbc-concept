@@ -419,14 +419,14 @@ main {
 /* start first section responsive */
 @media only screen and (max-width: 767px) {
   .text-banner {
-    /* width: 700px;
-    left: 5%;
-    top: 45%; */
     max-width: 100%;
     align-items: stretch !important;
-    padding-top: 10%;
+    padding-top: 8%;
     left: 10%;
     width: 80%;
+  }
+  .img-wrapper img {
+    border-radius: 0px;
   }
 
   .text-banner h1 {
@@ -828,7 +828,33 @@ main {
   background-image: linear-gradient(15deg, #001682, #3240e5);
   transition: 0.3s ease-in;
 }
-/* end mobile banker */
+/* end personal banker */
+/* start personal banker responsive */
+@media only screen and (max-width: 767px) {
+  .banner-text {
+    max-width: 100%;
+    align-items: stretch !important;
+    padding-top: 10%;
+    left: 10%;
+    width: 80%;
+  }
+
+  .banner-text h1 {
+    font-size: 24px;
+    font-family: tbc-medium;
+  }
+  .banner-text p {
+    width: 100%;
+    font-size: 13px;
+  }
+  .btn-area {
+    width: 100%;
+  }
+  .bg-img img {
+    border-radius: 0px;
+  }
+}
+/* end personal banker responsive */
 /* start footer */
 footer {
   padding-top: 60px;
