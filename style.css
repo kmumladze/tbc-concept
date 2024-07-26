@@ -57,6 +57,9 @@ nav {
   cursor: pointer;
   justify-content: center;
 }
+.responsive-tbc-logo {
+  display: none;
+}
 ul {
   list-style-type: none;
   display: flex;
@@ -153,6 +156,9 @@ li {
   color: #3295ce;
   transition: 0.5s;
 }
+.burger-bar {
+  display: none;
+}
 /* end navigation */
 
 /* start nav responsive */
@@ -163,17 +169,25 @@ li {
   .concept-text {
     display: none;
   }
-
-  .tbc-logo svg {
-    width: 500px !important;
-    height: 55px;
-  }
-  .tbc-logo {
-    width: 50%;
-    margin-left: 10%;
+  .responsive-tbc-logo {
+    display: inline;
   }
   .cls-1 {
     display: none;
+  }
+  .cls-2 {
+    display: none;
+  }
+  .lang-toggle svg {
+    display: none;
+  }
+  .language {
+    display: none;
+  }
+  .burger-bar {
+    display: inline;
+    font-size: 40px;
+    padding-top: 5px;
   }
 }
 
@@ -394,6 +408,9 @@ main {
   .big-message-text {
     font-size: 28px !important;
   }
+  .main-text {
+    padding-left: 45px;
+  }
 }
 /* end first section responsive */
 
@@ -582,7 +599,14 @@ main {
 /* end flex section */
 
 /* start flex section responsive */
-
+@media only screen and (max-width: 767px) {
+  .left {
+    flex-direction: row;
+  }
+  .parent {
+    overflow-x: scroll;
+  }
+}
 /* end flex section responsive */
 
 /* start flex boxes with numbers */
