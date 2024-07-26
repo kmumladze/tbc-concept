@@ -388,22 +388,34 @@ main {
 /* start first section responsive */
 @media only screen and (max-width: 767px) {
   .text-banner {
-    width: 700px;
+    /* width: 700px;
     left: 5%;
-    top: 45%;
+    top: 45%; */
+    max-width: 100%;
+    align-items: stretch !important;
+    padding-top: 10%;
+    left: 10%;
+    width: 80%;
   }
+
   .text-banner h1 {
-    font-size: 15px;
+    font-size: 24px;
     font-family: tbc-medium;
   }
+  .text-banner p {
+    width: 100%;
+    font-size: 13px;
+  }
   .sub-button {
-    width: 420px;
+    /* width: 420px; */
+    width: 100%;
   }
   .big-message-container {
     color: #141719;
-    font-weight: 500;
     line-height: 1.2;
-    margin-left: 50px;
+    font-family: tbc-medium;
+    padding-left: 45px;
+    padding-right: 45px;
   }
   .big-message-text {
     font-size: 28px !important;
