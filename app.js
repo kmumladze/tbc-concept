@@ -60,15 +60,27 @@ function removeclass() {
 // accordion
 const items = document.querySelectorAll(".accordion .accordion-item");
 const burgerBar = document.querySelector(".burger-bar");
+const mobileSection = document.querySelector(".accordion-section");
 
 burgerBar.addEventListener("click", function () {
-  items.forEach((item) => {
-    const trigger = item.querySelector(".accordion-header");
+  const shouldShowMobileToggleSection = mobileSection.style.display === "block";
 
-    trigger.addEventListener("click", () => {
-      trigger.nextElementSibling.classList.toggle("active");
-    });
-  });
+  mobileSection.style.display = shouldShowMobileToggleSection
+    ? "none"
+    : "block";
+
+  // items.forEach((item) => {
+  //   const trigger = item.querySelector(".accordion-header");
+  //   trigger.addEventListener("click", () => {
+  //     trigger.nextElementSibling.classList.toggle("active");
+  //   });
+  // });
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 991 && mobileSection.style.display === "block") {
+    mobileSection.style.display = "none";
+  }
 });
 
 // cookies

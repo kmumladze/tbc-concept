@@ -175,7 +175,7 @@ li {
     display: none;
   }
 
-  .lang-toggle svg {
+  .lang-toggle {
     display: none;
   }
   .language {
@@ -185,6 +185,7 @@ li {
     display: inline;
     font-size: 40px;
     padding-top: 5px;
+    cursor: pointer;
   }
 }
 
@@ -321,15 +322,20 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .accordion-section {
-    display: inline;
-    padding-right: 45px;
-    padding-left: 45px;
+    margin-top: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background-color: #fff;
   }
   .accordion {
     border: 1px solid #ccc;
-    margin-top: 55px;
     font-size: 18px;
     color: #141719;
     font-weight: 700;
