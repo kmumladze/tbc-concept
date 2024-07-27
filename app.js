@@ -69,6 +69,14 @@ burgerBar.addEventListener("click", function () {
     ? "none"
     : "block";
 
+  if (shouldShowMobileToggleSection) {
+    burgerBar.children[0].style.display = "block";
+    burgerBar.children[1].style.display = "none";
+  } else {
+    burgerBar.children[0].style.display = "none";
+    burgerBar.children[1].style.display = "block";
+  }
+
   // items.forEach((item) => {
   //   const trigger = item.querySelector(".accordion-header");
   //   trigger.addEventListener("click", () => {

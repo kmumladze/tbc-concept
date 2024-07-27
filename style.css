@@ -160,6 +160,10 @@ li {
 .burger-bar {
   display: none;
 }
+
+#close-icon {
+  display: none;
+}
 /* end navigation */
 
 /* start nav responsive */
@@ -184,7 +188,6 @@ li {
   .burger-bar {
     display: inline;
     font-size: 40px;
-    padding-top: 5px;
     cursor: pointer;
   }
 }
