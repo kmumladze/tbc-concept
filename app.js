@@ -70,3 +70,11 @@ burgerBar.addEventListener("click", function () {
     });
   });
 });
+
+// cookies
+const cookiesWrapper = document.querySelector(".cookies-wrapper");
+const acceptCookies = document.querySelector(".cookies-text");
+
+acceptCookies.addEventListener("click", function () {
+  cookiesWrapper.style.display = "none";
+});
