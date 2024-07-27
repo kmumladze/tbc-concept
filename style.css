@@ -712,7 +712,6 @@ main {
 .digital-container {
   background-color: #fff;
   width: 100%;
-  height: 414px;
   display: flex;
   justify-content: center;
   gap: 80px;
@@ -760,20 +759,60 @@ main {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
+.mobile-bank-responsive {
+  display: none;
+}
 /* end mobile bank */
 /* start mobile bank responsive */
 @media only screen and (max-width: 767px) {
-  .digital-mobile-bank {
-    width: 100%;
-    flex-direction: column;
-    margin-top: 50px;
-    overflow: hidden;
-  }
   .digital-container {
     flex-direction: column;
-    height: 764px;
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 20px;
+  }
+  .digital-mobile-bank {
+    height: 100%;
+  }
+  .digital-bank-text {
+    display: none;
+  }
+  .android-ios {
+    display: none;
+  }
+  .digital-bank-heading {
+    padding-top: 50px;
+  }
+  .right-digital img {
+    width: 60%;
+  }
+  .mobile-bank-responsive {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .download-btn {
+    width: 100%;
+    color: #182cc0;
+    border: 1px solid #182cc0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    font-family: tbc-regular;
+    padding: 10px 0;
+    margin-top: 15px;
+    gap: 5px;
+    transition: transform 0.6s ease-out;
+    cursor: pointer;
+  }
+  .download-btn:hover {
+    background-color: #f9fafa;
+    border-color: #e1e4e5;
+    transition: transform 0.6s ease-out;
+  }
+  .mobile-bank-responsive p {
+    font-family: tbc-regular;
+    font-size: 13px;
   }
 }
 /* end mobile bank responsive */
@@ -1144,3 +1183,41 @@ footer {
   }
 }
 /* end cookies div */
+.button-menu {
+  z-index: 90;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: auto;
+  bottom: 55px;
+  left: auto;
+  right: 40px;
+}
+
+.button-menu-trigger {
+  width: 56px;
+  height: 56px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #424a4d;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background-color 0.25s ease-in-out;
+  display: flex;
+}
+.button-menu-trigger:hover {
+  background-color: rgba(66, 74, 77, 0.8);
+  transition: background-color 0.25s ease-in-out;
+}
+.button-icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.button-icon svg {
+  overflow: hidden;
+}
