@@ -106,3 +106,25 @@ const acceptCookies = document.querySelector(".cookies-text");
 acceptCookies.addEventListener("click", function () {
   cookiesWrapper.style.display = "none";
 });
+
+let swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+let swiper2 = new Swiper(".mySwiper2", {
+  modules: [Thumbs],
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+});
