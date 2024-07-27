@@ -349,18 +349,18 @@ a {
   }
   .accordion-header {
     padding: 25px;
-    border-bottom: 1px solid #ccc;
     cursor: pointer;
   }
 
   .accordion-body {
-    display: none;
-    padding: 15px;
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
     border-bottom: 1px solid #ccc;
   }
 
   .accordion-body.active {
-    display: block;
+    height: 100px;
   }
   .accordion-section > .info {
     padding-left: 45px;

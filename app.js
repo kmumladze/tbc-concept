@@ -76,19 +76,27 @@ burgerBar.addEventListener("click", function () {
     burgerBar.children[0].style.display = "none";
     burgerBar.children[1].style.display = "block";
   }
-
-  // items.forEach((item) => {
-  //   const trigger = item.querySelector(".accordion-header");
-  //   trigger.addEventListener("click", () => {
-  //     trigger.nextElementSibling.classList.toggle("active");
-  //   });
-  // });
 });
 
 window.addEventListener("resize", () => {
   if (window.innerWidth > 991 && mobileSection.style.display === "block") {
     mobileSection.style.display = "none";
   }
+});
+
+items.forEach((item, idx) => {
+  const trigger = item.querySelector(".accordion-header");
+  trigger.addEventListener("click", () => {
+    trigger.nextElementSibling.classList.toggle("active");
+
+    items.forEach((innerItem, innerIdx) => {
+      const innerTrigger = innerItem.querySelector(".accordion-header");
+
+      if (idx !== innerIdx) {
+        innerTrigger.nextElementSibling.classList.remove("active");
+      }
+    });
+  });
 });
 
 // cookies
