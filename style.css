@@ -698,7 +698,9 @@ main {
   .third-box {
     width: 80%;
     justify-content: center;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    max-width: 1110px;
+    margin: auto;
   }
 }
 /* end flex box with numbers responsive  */
@@ -859,21 +861,32 @@ main {
 footer {
   padding-top: 60px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.footer-responsive-tbc-logo {
+  display: none;
 }
 
 .footer-top {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 150px;
 }
+
 .footer-right {
   display: flex;
   cursor: pointer;
   border: 1px solid transparent;
-  padding: 6px 8px;
+  max-width: 1110px;
   transition: 0.3s;
-  gap: 5px;
+  gap: 10px;
+  margin-left: auto;
 }
+
 .footer-right:hover {
   background-color: #eef1f1;
   border-radius: 5px;
@@ -881,6 +894,7 @@ footer {
 }
 .footer-left {
   color: #141719;
+  max-width: 1110px;
 }
 
 .footer-main {
@@ -891,15 +905,15 @@ footer {
 .container {
   width: 100%;
   max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 80px auto 0;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 40px;
+  gap: 80px;
+  font-size: 16px;
 }
 .footer-inner-left {
   display: flex;
-  gap: 48px;
+  gap: 80px;
 }
 .footer-products {
   display: flex;
@@ -913,7 +927,7 @@ footer {
 }
 .footer-inner-right {
   display: flex;
-  gap: 85px;
+  gap: 90px;
 }
 .concept-space {
   display: flex;
@@ -939,10 +953,12 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
+
 .tell,
 .mail,
 .branches {
   cursor: pointer;
+  font-family: tbc-regular;
 }
 .tell:hover {
   text-decoration: underline;
@@ -968,6 +984,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 .fb-icon:hover {
   color: #182cc0;
@@ -1015,4 +1032,115 @@ footer {
   color: #182cc0;
   transition: 0.7s;
 }
+.footer-responsive {
+  display: none;
+}
+
 /* end footer */
+
+@media only screen and (max-width: 767px) {
+  .footer-left {
+    display: none;
+  }
+
+  .footer-right {
+    max-width: 1110px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #f9fafa;
+    margin-right: 45px;
+  }
+  .footer-responsive-tbc-logo {
+    display: block;
+    color: #141719;
+  }
+  .footer-top {
+    padding-left: 45px;
+    padding-right: 45px;
+    gap: 50px;
+  }
+  .footer-main {
+    display: none;
+  }
+  /* .footer-bottom-inner {
+    display: flex;
+    flex-direction: column-reverse !important;
+  } */
+
+  .footer-responsive {
+    display: inline;
+    margin-bottom: 80px;
+    gap: 30px;
+  }
+  .footer-accordion-section {
+    font-size: 24px;
+    color: #141719;
+  }
+  .footer-dropdown-toggle-link {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .footer-responsive > .info {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .accordion-header {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+/* start cookies div */
+
+.cookies-wrapper {
+  z-index: 90;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: auto;
+  bottom: 66px;
+  left: 0;
+  right: 0;
+}
+.cookies-block {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  font-size: 12px;
+  display: flex;
+  box-shadow: 0 36px 40px -15px rgba(12, 43, 67, 0.07);
+  font-family: tbc-medium;
+}
+.cookies-icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.cookies-text {
+  cursor: pointer;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease-in-out;
+  display: flex;
+  position: relative;
+  color: #182cc0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  gap: 5px;
+}
+.cookies-text:hover {
+  color: #3295ce;
+  transition: transform 0.6s ease-in-out;
+}
+@media only screen and (max-width: 767px) {
+  .cookies-block {
+    width: 90%;
+  }
+}
+/* end cookies div */
