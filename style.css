@@ -324,6 +324,10 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
+  .accordion-item:nth-child(1) {
+    border-top: 1px solid #ccc;
+  }
+
   .accordion-section {
     margin-top: 80px;
     position: fixed;
@@ -336,18 +340,16 @@ a {
     background-color: #fff;
   }
   .accordion {
-    border: 1px solid #ccc;
     font-size: 18px;
     color: #141719;
     font-weight: 700;
     font-family: tbc-medium;
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
   .accordion-header {
     cursor: pointer;
-    padding: 25px 45px;
+    padding: 36px 45px;
   }
 
   .accordion-body {
@@ -372,13 +374,18 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
+  .footer-bottom {
+    padding: 0 47px;
+    background-color: #f9fafa !important;
+  }
+
   .footer-bottom-left {
     display: flex;
     flex-direction: column-reverse;
     color: #555f62;
     font-size: 14px;
     gap: 32px;
-    align-items: flex-start;
+    align-items: flex-start !important;
   }
   .footer-text {
     color: #6f787b;
@@ -994,10 +1001,11 @@ main {
 /* end personal banker responsive */
 /* start footer */
 footer {
-  padding-top: 60px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  padding: 0 47px;
+  padding-top: 60px;
 }
 .footer-responsive-tbc-logo {
   display: none;
@@ -1137,8 +1145,8 @@ footer {
 .footer-bottom {
   background-color: #fff;
   border-top: 1px solid #eef1f1;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-size: 12px;
 }
 .footer-bottom-inner {
@@ -1175,6 +1183,11 @@ footer {
 /* end footer */
 
 @media only screen and (max-width: 767px) {
+  footer {
+    padding: 0;
+    padding-top: 36px;
+  }
+
   .footer-left {
     display: none;
   }
@@ -1184,17 +1197,17 @@ footer {
     padding: 8px 10px;
     border-radius: 5px;
     background-color: #f9fafa;
-    margin-right: 45px;
   }
   .footer-responsive-tbc-logo {
     display: block;
     color: #141719;
   }
   .footer-top {
-    padding-left: 45px;
-    padding-right: 45px;
     gap: 50px;
     padding-bottom: 40px;
+    width: 100%;
+    padding: 0 47px;
+    padding-bottom: 36px;
   }
   .footer-main {
     display: none;
@@ -1218,8 +1231,7 @@ footer {
   }
 
   .footer-responsive {
-    display: inline;
-    margin-bottom: 80px;
+    display: block;
     gap: 30px;
   }
   .footer-accordion-section {
@@ -1233,6 +1245,7 @@ footer {
   .footer-responsive > .info {
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 56px;
   }
   .accordion-header {
     padding-left: 45px;
