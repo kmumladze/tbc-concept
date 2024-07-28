@@ -802,6 +802,7 @@ main {
 /* start mobile bank */
 .digital-mobile-bank {
   background-color: #fff;
+  padding: 0 47px;
 }
 
 .digital-container {
@@ -811,10 +812,7 @@ main {
   gap: 80px;
   max-width: 1110px;
   margin: 0 auto;
-}
-
-.right-digital {
-  padding-top: 40px;
+  padding-bottom: 45px;
 }
 
 .right-digital img {
@@ -867,9 +865,8 @@ main {
 @media only screen and (max-width: 767px) {
   .digital-container {
     flex-direction: column;
-    padding-left: 45px;
-    padding-right: 45px;
     padding-top: 20px;
+    gap: 50px;
   }
   .digital-mobile-bank {
     height: 100%;
@@ -971,11 +968,10 @@ main {
 }
 /* end personal banker */
 /* start personal banker responsive */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .banner-text {
     max-width: 100%;
     align-items: stretch !important;
-    padding-top: 10%;
     left: 10%;
     width: 80%;
   }
@@ -1490,7 +1486,21 @@ footer {
   .swiper-container {
     overflow: visible;
   }
+  .awards-container {
+    overflow: scroll;
+  }
+  .awards-swiper-container {
+    overflow: visible;
+  }
   .swiper-slide {
+    width: 100%;
+  }
+
+  .awards-swiper-slide {
+    width: 100%;
+  }
+
+  .awards-swiper-slide > p {
     width: 100%;
   }
 }
@@ -1507,11 +1517,17 @@ footer {
   height: 100%;
 }
 
+.products {
+  padding: 0 47px;
+  width: 100%;
+}
+
 .swiper-products {
   display: flex;
   gap: 30px;
   max-width: 1110px;
   margin: auto;
+  overflow-x: scroll;
 }
 .digital-container2 {
   display: flex;
@@ -1610,6 +1626,7 @@ footer {
 .awards-swiper-container {
   max-width: 1110px;
   margin: 0 auto;
+  width: 100%;
 }
 
 /* awards end */
