@@ -156,9 +156,8 @@ const btn = document.querySelector(".button-menu");
 const onclickMenu = document.querySelector(".onclick-menu");
 
 btn.addEventListener("click", function () {
-  console.log("clicked");
   if (onclickMenu.style.display === "none") {
-    onclickMenu.style.display = "block";
+    onclickMenu.style.display = "flex";
   } else {
     onclickMenu.style.display = "none";
   }

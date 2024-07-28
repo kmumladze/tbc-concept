@@ -1362,6 +1362,28 @@ footer {
 
 .onclick-menu {
   display: none;
+  position: absolute;
+  bottom: 70px;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 100;
+}
+
+.onclick-menu > div {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eef1f1;
+  cursor: pointer;
+}
+
+.onclick-menu > div:hover {
+  background-color: #3295ce;
+  color: #fff;
 }
 
 /* swiper */
