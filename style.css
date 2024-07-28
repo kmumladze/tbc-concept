@@ -348,8 +348,8 @@ a {
     gap: 20px;
   }
   .accordion-header {
-    padding: 25px;
     cursor: pointer;
+    padding: 25px 45px;
   }
 
   .accordion-body {
@@ -365,6 +365,12 @@ a {
   .accordion-section > .info {
     padding-left: 45px;
     padding-right: 45px;
+  }
+  .accordion-body > p {
+    font-family: tbc-regular;
+    padding-left: 45px;
+    color: #555f62;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -757,18 +763,27 @@ main {
 
 /* end slider section */
 /* start mobile bank */
-.digital-container {
+.digital-mobile-bank {
   background-color: #fff;
+}
+
+.digital-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 80px;
+  max-width: 1110px;
+  margin: 0 auto;
 }
+
+.right-digital {
+  padding-top: 40px;
+}
+
 .right-digital img {
   width: 290px;
-  margin-top: 30px;
   object-fit: cover;
-  height: 90%;
+  height: 100%;
 }
 .left-digital {
   display: flex;
@@ -959,19 +974,18 @@ footer {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
   width: 100%;
-  padding-left: 150px;
-  padding-right: 150px;
 }
 
 .footer-right {
   display: flex;
+  align-items: center;
   cursor: pointer;
   border: 1px solid transparent;
-  max-width: 1110px;
   transition: 0.3s;
   gap: 10px;
-  margin-left: auto;
 }
 
 .footer-right:hover {
@@ -981,27 +995,32 @@ footer {
 }
 .footer-left {
   color: #141719;
-  max-width: 1110px;
 }
 
 .footer-main {
   background-color: #fff;
-  padding-bottom: 45px;
   display: flex;
+  flex-direction: column;
 }
-.container {
+
+.footer-items-container {
   width: 100%;
   max-width: 1110px;
-  margin: 80px auto 0;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 80px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
   font-size: 16px;
 }
 .footer-inner-left {
   display: flex;
   gap: 80px;
 }
+
+.footer-text {
+  font-family: tbc-regular;
+}
+
 .footer-products {
   display: flex;
   flex-direction: column;
@@ -1090,12 +1109,9 @@ footer {
   font-size: 12px;
 }
 .footer-bottom-inner {
-  padding-left: 47px;
-  padding-right: 47px;
   width: 100%;
   max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .footer-bottom-left {
   justify-content: space-between;
@@ -1108,7 +1124,7 @@ footer {
 }
 .footer-bottom-right {
   display: flex;
-  gap: 10px;
+  gap: 35px;
   font-family: tbc-regular;
 }
 .bottom-text {
@@ -1145,14 +1161,28 @@ footer {
     padding-left: 45px;
     padding-right: 45px;
     gap: 50px;
+    padding-bottom: 40px;
   }
   .footer-main {
     display: none;
   }
-  /* .footer-bottom-inner {
+  .footer-accordion {
+    padding-top: 15px;
+  }
+  .footer-accordion-header {
+    font-size: 24px;
+  }
+  .accordion-body p {
+    font-family: tbc-regular;
+    padding-left: 45px;
+    color: #555f62;
+    font-size: 15px;
+  }
+  .accordion-body {
     display: flex;
-    flex-direction: column-reverse !important;
-  } */
+    flex-direction: column;
+    gap: 10px;
+  }
 
   .footer-responsive {
     display: inline;
@@ -1270,6 +1300,10 @@ footer {
   overflow: hidden;
 }
 
+.onclick-menu {
+  display: none;
+}
+
 /* swiper */
 
 .swiper-container {
@@ -1314,6 +1348,15 @@ footer {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+}
+
+.swiper-scrollbar {
+  height: 2px !important;
+  cursor: grab;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #182cc0;
 }
 
 .swiper-text-container > p {
@@ -1424,6 +1467,7 @@ footer {
   font-family: tbc-medium;
   max-width: 1110px;
   margin: auto;
+  margin-bottom: 36px;
 }
 .digital-img {
   width: 598px;
@@ -1441,19 +1485,41 @@ footer {
   flex-direction: column;
   border: 1px solid #e1e4e5;
   border-radius: 8px;
+}
+
+.image-container {
+  position: relative;
   overflow: hidden;
+  width: 350px;
+  height: 212px;
 }
-.digital-container2 > img {
-  width: 443px;
+
+.image-container > img {
   object-fit: cover;
-  height: 100%;
+  width: 100%;
+  height: 102%;
+  transition: all 0.25s ease-in-out;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
+
+.image-container > img:hover {
+  position: absolute;
+  top: -2%;
+}
+
 .text-area {
-  padding-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-left: 20px;
+  gap: 16px;
+  padding: 28px;
 }
 .text-area > h3 {
   color: #141719;

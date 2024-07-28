@@ -121,10 +121,14 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
-let swiper2 = new Swiper(".mySwiper2", {
-  modules: [Thumbs],
-  spaceBetween: 10,
-  thumbs: {
-    swiper: swiper,
-  },
+const btn = document.querySelector(".button-menu");
+const onclickMenu = document.querySelector(".onclick-menu");
+
+btn.addEventListener("click", function () {
+  console.log("clicked");
+  if (onclickMenu.style.display === "none") {
+    onclickMenu.style.display = "block";
+  } else {
+    onclickMenu.style.display = "none";
+  }
 });
