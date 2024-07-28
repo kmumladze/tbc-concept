@@ -135,9 +135,14 @@ acceptCookies.addEventListener("click", function () {
 
 let swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
-  slidesPerView: 3,
+  slidesPerView: 2,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+    991: {
+      slidesPerView: 3,
+    },
+  },
   scrollbar: {
     el: ".swiper-scrollbar",
   },

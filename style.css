@@ -402,14 +402,21 @@ main {
 .main-container {
   display: flex;
   width: 100%;
-  margin-top: 100px;
-  max-width: 1110px;
   margin: 100px auto 0;
+  padding: 0 47px;
+}
+
+.main-container > div {
+  max-width: 1110px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .banner {
   position: relative;
   margin-top: 60px;
+  width: 100%;
+  padding: 0 47px;
 }
 .img-wrapper img {
   min-height: 360px;
@@ -497,14 +504,9 @@ main {
     color: #141719;
     line-height: 1.2;
     font-family: tbc-medium;
-    padding-left: 45px;
-    padding-right: 45px;
   }
   .big-message-text {
     font-size: 28px !important;
-  }
-  .main-text {
-    padding-left: 45px;
   }
 }
 /* end first section responsive */
@@ -515,17 +517,19 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 0 47px;
 }
 .big-message-container {
   width: 100%;
   max-width: 1110px;
   display: flex;
+  margin: 0 auto;
 }
 .big-message-text {
   color: #141719;
   font-weight: 500;
   line-height: 1.5;
-  font-size: 36px;
+  font-size: 32px;
   margin-top: 100px;
   font-family: tbc-medium;
 }
@@ -534,20 +538,28 @@ main {
 /* start flex section */
 .flex-section {
   position: relative;
-  top: 13%;
   width: 100%;
   display: flex;
+  padding: 0 47px;
+}
+
+.heading-wrapper {
+  width: 100%;
+  padding: 0 47px;
+}
+
+.heading-wrapper > div {
+  margin-bottom: 0;
+  max-width: 1110px;
+  margin: 100px auto 0;
 }
 
 .heading-wrapper h2 {
-  margin-bottom: 0;
-  color: #141719;
   font-size: 24px;
+  color: #141719;
   font-weight: 700;
   line-height: 1.5;
   font-family: tbc-medium;
-  max-width: 1110px;
-  margin: 100px auto 0;
 }
 
 .img-box {
@@ -621,6 +633,8 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
   gap: 23px;
   margin-top: 50px;
 }
@@ -694,9 +708,30 @@ main {
   .left {
     flex-direction: row;
   }
+
+  .right {
+    height: 256px;
+    overflow: visible;
+    width: 280px;
+  }
+
+  .right > img {
+    height: 256px;
+    width: 280px;
+  }
+
   .parent {
     overflow-x: scroll;
-    margin-left: 45px;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .img-box {
+    width: 280px;
+  }
+
+  .img-box > img {
+    width: 280px;
   }
 
   .heading-wrapper {
@@ -707,12 +742,19 @@ main {
 /* end flex section responsive */
 
 /* start flex boxes with numbers */
+.numbers-section {
+  width: 100%;
+  padding: 0 47px;
+}
+
 .flex-container {
   display: flex;
   justify-content: center;
   width: 100%;
   gap: 30px;
+  margin: 0 auto;
   margin-top: 100px;
+  max-width: 1110px;
 }
 .first-box,
 .second-box,
@@ -741,18 +783,15 @@ main {
 /* end flex boxes with numbers */
 
 /* start flex box with numbers responsive */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .flex-container {
     flex-direction: column;
   }
   .first-box,
   .second-box,
   .third-box {
-    width: 80%;
+    width: 100%;
     justify-content: center;
-    /* margin-left: 10%; */
-    max-width: 1110px;
-    margin: auto;
   }
 }
 /* end flex box with numbers responsive  */
@@ -1333,7 +1372,7 @@ footer {
   cursor: pointer;
 }
 .swiper-slide {
-  height: 413px;
+  /* height: 413px; */
   border: 1px solid #e1e4e5;
   border-radius: 8px;
   flex-direction: column;
@@ -1376,12 +1415,12 @@ footer {
   gap: 30px;
 }
 .swiper-text-container {
-  padding-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-left: 20px;
   cursor: pointer;
+  min-height: 170px;
+  padding: 25px 20px;
 }
 .swiper-text-container h3 {
   color: #141719;
@@ -1409,15 +1448,15 @@ footer {
 
 .slider-container {
   width: 100%;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 47px;
 }
 .heading-text {
   justify-content: space-between;
   align-items: center;
   display: flex;
   padding-top: 100px;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 .heading-text h2 {
   color: #141719;
@@ -1444,10 +1483,6 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-  .heading-text {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
   .swiper-wrapper {
     display: flex;
     width: 100%;
@@ -1598,6 +1633,10 @@ footer {
 @media only screen and (max-width: 1200px) {
   .dropdown-container {
     max-width: 100%;
+    padding: 0 45px;
+  }
+
+  .main-container {
     padding: 0 45px;
   }
 }
