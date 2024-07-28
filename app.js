@@ -108,7 +108,7 @@ acceptCookies.addEventListener("click", function () {
 });
 
 let swiper = new Swiper(".mySwiper", {
-  spaceBetween: 10,
+  spaceBetween: 30,
   slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
