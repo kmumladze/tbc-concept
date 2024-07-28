@@ -56,7 +56,3 @@ For any inquiries or further information, you can contact us at:
 - **Phone**: +995 32 2 27 27 00
 - **Email**: info@tbcconcept.ge
 - **Branches**: Check our [branches section](#) for more details.
-
----
-
-This README provides an overview and basic usage instructions for the TBC Concept website. Feel free to expand or modify it based on specific project requirements.
