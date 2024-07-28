@@ -1,14 +1,21 @@
-const dropdownContainer = document.querySelector(".card-dropdown-menu");
+const dropdownContainer = document.querySelector(".dropdown-section");
 const firstDropDown = document.querySelector(".first-dropdown-menu");
 const secondDropDown = document.querySelector(".second-dropdown-menu");
 const thirdDropDown = document.querySelector(".third-dropdown-menu");
 
-function toggleDropDown() {
-  dropdownContainer.classList.toggle("show");
-  if (dropdownContainer.classList.contains("show")) {
-    dropdownContainer.classList.remove("show");
+let prevClickedElement = null;
+
+function toggleDropDown(element) {
+  if (prevClickedElement === element) {
+    removeWrapper();
+    firstDropDown.classList.remove("show");
+    prevClickedElement = null;
+    return;
+  } else {
+    prevClickedElement = element;
   }
-  removeclass();
+
+  showWrapper();
 
   firstDropDown.classList.toggle("show");
 
@@ -22,9 +29,17 @@ function toggleDropDown() {
   }
   //   thirdDropDown.classList.add("hide");
 }
-function toggleDropDown2() {
-  dropdownContainer.classList.toggle("show");
-  removeclass();
+function toggleDropDown2(element) {
+  if (prevClickedElement === element) {
+    removeWrapper();
+    secondDropDown.classList.remove("show");
+    prevClickedElement = null;
+    return;
+  } else {
+    prevClickedElement = element;
+  }
+
+  showWrapper();
 
   if (firstDropDown.classList.contains("show")) {
     firstDropDown.classList.remove("show");
@@ -37,9 +52,18 @@ function toggleDropDown2() {
 
   secondDropDown.classList.toggle("show");
 }
-function toggleDropDown3() {
-  dropdownContainer.classList.toggle("show");
-  removeclass();
+function toggleDropDown3(element) {
+  if (prevClickedElement === element) {
+    removeWrapper();
+    thirdDropDown.classList.remove("show");
+    prevClickedElement = null;
+    return;
+  } else {
+    prevClickedElement = element;
+  }
+
+  showWrapper();
+
   thirdDropDown.classList.toggle("show");
   if (secondDropDown.classList.contains("show")) {
     secondDropDown.classList.remove("show");
@@ -50,11 +74,13 @@ function toggleDropDown3() {
     firstDropDown.classList.remove("show");
     firstDropDown.classList.add("hide");
   }
-
-  //   firstDropDown.classList.add("hide");
 }
-function removeclass() {
-  dropdownContainer.classList.remove("card-dropdown-menu");
+function removeWrapper() {
+  dropdownContainer.style.display = "none";
+}
+
+function showWrapper() {
+  dropdownContainer.style.display = "block";
 }
 
 // accordion

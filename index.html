@@ -80,10 +80,29 @@
 
         <div class="header-menu">
           <ul>
-            <li id="dropdownBtn1" onclick="toggleDropDown()">პროდუქტები</li>
-            <li id="dropdownBtn2" onclick="toggleDropDown2()">შეთავაზებები</li>
-            <li id="dropdownBtn3" onclick="toggleDropDown3()">
+            <li class="nav-items" id="dropdownBtn1" onclick="toggleDropDown(this)">პროდუქტები
+              <div class="first-dropdown-menu">
+                <a href="#" class="first">პროდუქტების მიმოხილვა</a>
+                <a href="#">ნაკრები</a>
+                <a href="#">პირადი ბანკირი</a>
+              </div>
+
+            </li>
+            <li class="nav-items" id="dropdownBtn2" onclick="toggleDropDown2(this)">შეთავაზებები
+              <div class="second-dropdown-menu">
+                <a href="#">მიმოხილვა</a>
+                <a href="#">შეთავაზებები</a>
+                <a href="#">ღონისძიებები</a>
+              </div>
+            </li>
+            <li class="nav-items" id="dropdownBtn3" onclick="toggleDropDown3(this)">
               კონცეპტის სივრცე
+              <div class="third-dropdown-menu">
+                <a href="#">მიმოხილვა</a>
+                <a href="#">კაფე</a>
+                <a href="#">ბიბლიოთეკა</a>
+                <a href="#" class="concept-button">კონცეპტ ფილიალები</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -152,6 +171,7 @@
     <!-- end navigation -->
 
     <!-- start dropdown menu -->
+    <section class="dropdown-section">
     <div class="dropdown-container">
       <div class="card-dropdown-menu">
         <div class="left-side">
@@ -180,28 +200,8 @@
           </div>
         </div>
       </div>
-
-      <div class="right-side">
-        <div class="first-dropdown-menu">
-          <a href="#" class="first">პროდუქტების მიმოხილვა</a>
-          <a href="#">ნაკრები</a>
-          <a href="#">პირადი ბანკირი</a>
-        </div>
-
-        <div class="second-dropdown-menu">
-          <a href="#">მიმოხილვა</a>
-          <a href="#">შეთავაზებები</a>
-          <a href="#">ღონისძიებები</a>
-        </div>
-
-        <div class="third-dropdown-menu">
-          <a href="#">მიმოხილვა</a>
-          <a href="#">კაფე</a>
-          <a href="#">ბიბლიოთეკა</a>
-          <a href="#" class="concept-button">კონცეპტ ფილიალები</a>
-        </div>
-      </div>
     </div>
+  </section>
     <!-- end dropdown menu -->
 
     <!-- start accordion -->
